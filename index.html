@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Solway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    <title>Evaluation Plan</title>
+  </head>
+  <body>
+    <!-- Start header -->
+    <header class="top-header">
+      <nav class="navbar header-nav navbar-expand-lg">
+          <div class="container-fluid">
+            <nav class="navbar ">
+              <span class="navbar-brand mb-0 h1">Kamtina Musyfirah</span>
+            </nav>
+
+              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+                  <ul class="navbar-nav">
+                      <li><a class="nav-link active" href="#">Home</a></li>
+                      <li><a class="nav-link" href="#">Evaluation Plan</a></li>
+                      <li><a class="nav-link" href="#about">About</a></li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <!-- End header -->
+
+  <!--Carousel-->
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Basis Data II</h1>
+    </div>
+  </div>
+  <!--End Carousel-->
+
+<!-- section -->
+    <div class="row">
+      <div class="col-lg-12 col-md-12 white_fonts layout_padding padding_0">
+       <div class="image">
+        <img src="image/MySQL.svg_ (1).png" alt="">
+        </div>
+      </div>
+    </div>
+<!-- end section -->
+
+<!-- section -->
+<div class="container utama">
+<div class="section dark_bg" id="definisi">
+  <div class="container-fluid">
+     <!-- section -->
+      <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+              <div class="left">
+                <p class="section_count">01</p>
+              </div>
+              <div class="right">
+                <p class="small_tag">--------</p>
+                    <h2><span class="white_fonts">Evaluation</span> Plan</h2>
+                    <p class="large">PostgreSQL, Oracle, SQL Server, MySQL</p>
+              </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- section -->
+      <div class="row">
+          <div class="col-lg-12 col-md-12 white_fonts layout_padding padding_0">
+              <p>
+                Sebagian besar sistem database menyediakan cara untuk melihat <i>evaluation plan</i> yang dipilih untuk dijalankan
+                <i>query</i> tertentu. Biasanya yang terbaik adalah menggunakan GUI yang disediakan dengan sistem database
+                untuk melihat <i>evaluation plan</i>. Namun, jika menggunakan antarmuka baris perintah, banyak
+                database mendukung variasi dari perintah <b>explain</b> <i>(query)</i>, yang menampilkan
+                <i>execution plan</i> yang dipilih untuk <i>query</i>  yang ditentukan . Sintaks yang bervariasi
+                dengan database yang berbeda:
+                <ol>
+                  <li>PostgreSQL
+                    <p>PostgreSQL menggunakan syntax <b>explain</b> <i>(query)</i> sama seperti dengan MySQL</p>
+                  </li>
+                  <li>Oracle
+                    <p>
+                      Oracle menggunakan syntax <strong>explain plan for</strong>, namun syntax tersebut hanya menyimpan file <i>resultant plan</i>
+                      dalam tabel yang disebut <i>plan_table</i>. <i>Query</i> <strong>"select * from table(dbms xplan.display);"</strong> 
+                      digunakan untuk menampilkan <i>plan</i> yang disimpan. 
+                    </p>
+                  </li>
+                  <li>SQL Server
+                    <p>
+                      SQL Server membutuhkan syntax <strong>set showplan text on</strong> untuk dieksekusi sebelum mengirimkan <i>query</i>.
+                      Kemudian, saat <i>query</i> dikirim , bukannya menjalankan <i>query</i>, tetapi <i>evaluation plan</i> ditampilkan.
+                    </p>
+                  </li>
+                  <li>MySQL
+                    <p>
+                      MySQL menggunakan syntax <b>explain</b> <i>(query)</i> seperti PostgreSQL, tetapi outputnya merupakan
+                      sebuah tabel yang isinya tidak mudah dimengerti. Namun, menjalankan <strong>show warning</strong>
+                      setelah command <strong>expalin</strong> menampilkan <i>Evaluation Plan</i> dalam format yang lebih mudah dibaca manusia.
+                    </p>
+                  </li>
+                </ol>
+              </p>
+          </div>
+      </div>
+    </div>
+
+         <!-- section -->
+      <div class="section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="full">
+                        <div class="heading_main text_align_left">
+              <div class="left">
+                <p class="section_count">02</p>
+              </div>
+              <div class="right">
+                <p class="small_tag">--------</p>
+                    <h2><span class="white_fonts">Evaluation</span> Plan</h2>
+                    <p class="large">Contoh</p>
+              </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end section -->
+
+    <!-- section -->
+      <div class="row">
+          <div class="col-lg-12 col-md-12 white_fonts layout_padding padding_0">
+            <img src="image/explain1.png" alt="">
+              <p>
+                <span class="penjelasan"><strong>Penjelasan Tabel</strong></span>
+              </p>
+                <div class="container1">
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menunjukkan bahwa pada  nomor urut berapa SELECT tersebut dalam query . 
+                          dan pada tabel diatas menujukkan bahwa kedua tabel berada pada nomor urut 1.</p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>id</h2>
+                    </div>
+                  </div>
+              
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>pada tabel diatas yaitu PRIMARY artinya bahwa tabel tersebut berada diluar select sedangkan 
+                          MATERIALIZED artinya bahwa subquery terwujud. </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>select_type </h2>
+                    </div>
+                  </div>
+              
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>merujuk pada nama table database tersebut yaitu table mahasiswa dan table penerima_beasiswa.</p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>table</h2>
+                    </div>
+                  </div>
+              
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>pada kolom ini dijelaskan bagaimana kolom tersebut bergabung . ALL berarti bahwa pemindaian tabel lengkap 
+                          sedangkan nilai index fungsinya hampir sama dengan ALL tetapi menggunakan index dalam pemindaiannya. </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>type</h2>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menunjukkan index dari mana mysql memilih untuk menemukan table dari table tersebut . 
+                          jika nilai pada kolom tersebut NULL maka index nya tidak relevan sedangkan jika primary </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>possible_keys</h2>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menunjukkan index yang diputuskan untuk digunakan pada mysql tersebut . jika nilai pada kolom tersebut NULL maka hal 
+                          tersebut berarti bahwa mysql tidak dapat menemukan index yang digunakan untuk mengeksekusi query secara lebih efisien </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>key</h2>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menunjukkan panjang kunci yang diputuskan untuk digunakan. Nilai dari key_len memungkinkan untuk menentukan berapa 
+                          banyak bagian yang digunakan oleh mysql . jika nilai pada kolom key adalah NULL maka pada kolom key_len juga akan NULL.
+                          </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>key_len</h2>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menujukkan kolom atau konstanta yang dibandingkan dengan index yang disebutkan dalam kolom ley untuk memilih baris dari table . </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>ref</h2>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menunjukkan jumlah baris mysql yang harus diperiksa untuk mengeksekusi query. 
+                          Jika menggunakan InnoDB , maka angka pada kolom tersebut adalah perkiraan dan tidak selalu tepat. </p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>rows</h2>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <p>menunjukkan informasi tambahan tentang bagaimana mysql menyelesaikan query tersebut . nilai pada tabel tersebut adalah using index berarti bahwa informasi kolom diambil dari tabel hanya 
+                          menggunakan informasi dari index tanpa membaca baris yang ada. Using where berarti bahwa digunakannya kondisi WHERE .</p>
+                      </div>
+                    </div>
+              
+                    <div class="face face2">
+                        <h2>extra</h2>
+                    </div>
+                  </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+<!-- end section -->
+  </div>
+<!-- end section -->
+
+<div class="about1" id="about">
+  <h2>ABOUT</h2>
+  <p class="small_tag">-----------</p>
+</div>
+
+<div class="container about">
+  <div class="box">
+    <div class="icon">
+      <i class="fa fa-map-marker" aria-hidden="true"></i>
+    </div>
+    <div class="details">
+      <h3>Sinjai</h3>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="icon">
+      <i class="fa fa-github" aria-hidden="true"></i>
+    </div>
+    <div class="details">
+      <h3>KamtinaMusyfirah</h3>
+    </div>
+  </div>
+  
+  <div class="box">
+    <div class="icon">
+      <i class="fa fa-envelope" aria-hidden="true"></i>
+    </div>
+    <div class="details">
+      <h3>kamtinamusyfirah12@gmail.com</h3>
+    </div>
+  </div>
+</div>
+<!-- end section -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
